@@ -1,0 +1,15 @@
+USAGE: python tokenizer.py
+
+For the given file (nc.txt), your tasks are:
+a) (20pts) Tokenization: Write a simple program to separate the punctuations from words. If any, describe the special cases, which may need special treatment. You can first test your program on a small file.
+b) (20pts)Write a program to collect the following information for the given corpus:
+    a. Number of sentences.
+    b. Number of word tokens.
+    c. Number of word types.
+    d. Word count and percentage of the 100 most frequent tokens in the vocabulary (including stopwords and punctuations)
+    e. Word count and percentage of the 100 most frequent tokens in the vocabulary (excluding stopwords and punctuations).
+    f. Number of singletons in the corpus.
+    g. Number of tokens in the vocabulary containing digits [0-9].
+    h. Number of tokens in the vocabulary containing punctuation.
+    i. Number of tokens in the vocabulary containing both alpha [A-Za-z] and numerics [0-9].
+    j. Frequency and percentage of the 100 most frequent word pairs in the corpus (excluding stopwords and punctuations).

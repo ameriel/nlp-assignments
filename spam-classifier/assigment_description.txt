@@ -1,0 +1,9 @@
+USAGE: python spam-classifier.py
+
+In this exercise, you will use Naïve Bayes to classify email messages into spam and nonspam groups. To classify the email messages, we use a multinomial Naïve Bayes model (where the word frequency is used in feature vectors, instead of a Boolean variable that indicates the word occurs or not).
+
+you will need to train your model on the training set and predict the spam/nonspam
+classification on the test set. Calculate the parameters (the necessary probabilities) from the training data. Using the model parameters you obtained from training, classify each test document as spam or non-spam.
+
+Report the number of false positive, true positives, false negatives, and true
+negatives. Report the precision, recall and f-score of your system.

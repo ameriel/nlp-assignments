@@ -1,0 +1,7 @@
+USAGE: python distance.py source_word target_word [max_to_display=1]
+
+Write a program that computes the minimum number of edits: insertions, deletions, or substitutions that can convert an input source string to an input target string. Using the cost of 1, 1 and 2 for insertion, deletion and replacement is traditionally called Levenshtein distance.
+
+Also produce a visual display of the best (minimum distance) alignment. The 1st line of the visual display shows the target word and the 3rd line shows the source word. An insertion in the target word is represented as an underscore in the 3rd line aligned with the inserted letter in the 1st line. Deletion from the source word is represented as an underscore ‘_’ in the 1st line aligned with the corresponding deleted character in the source on the 3rd line. Finally, if a letter is unchanged between target and source then a vertical bar (the pipe symbol ‘|’) is printed aligned with the letter in the 2nd line.
+
+Also print out the valid alignments with the same minimum edit distance. You should print out the first 100 alignments or N alignments, where N comes from a command line argument -n. This is essential because the number of possible alignments is exponential in the size of the input strings.

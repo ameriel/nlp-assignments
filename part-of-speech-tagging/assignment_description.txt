@@ -1,0 +1,12 @@
+USAGE: python speech-tagger.py path/to/train path/to/test
+
+In this assignment, you will build a Hidden Markov Model and use it to tag words with their part of speech.
+
+The basic setting is a supervised learning. You need to estimate P(current tag | previous tag) and P(current word | current tag) from the training data set of pre-tagged text. Some smoothing is necessary to handle zero probability issue. You will then evaluate the learned model by finding the Viterbi tagging (i.e., the best tag sequence) for the test data and measuring how many tags were correct. Note that you’ll use the Viterbi algorithm for testing but not for training.
+
+For speed and simplicity, you will use relatively small datasets, a smaller tag set, and a bi-gram model instead of a trigram model. You will also ignore the spelling of words (useful for tagging unknown (or “unseen”) words). All these simplifications hurt accuracy. So overall, your percentage of correct tags will be in the low 90’s instead of the high 90’s as mentioned in class.
+
+Your program must print two lines summarizing its performance on the test data, using both add-one smoothing without backoff and one-count-smoothing, describing what percentage of them received the correct tag:
+  - The overall accuracy (e.g., 92.48%) considers all word tokens, other than the sentence boundary markers ### (No one in NLP tries to take credit for tagging ### correctly with ###!).
+  - The known-word accuracy (e.g., 95.99%) considers only tokens of words (other than ###) that also appeared in train.
+  - The novel-word accuracy (e.g., 56.07%) considers only tokens of words that did NOT appear in train. (These are very hard to tag, since context is the only clue to correct tag. But they constitute about 9% of all tokens in entest, so it is important to tag them as accurately as possible.)
